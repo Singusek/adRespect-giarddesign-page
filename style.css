@@ -1,0 +1,280 @@
+.search-button {
+    background-image: url('assets/images/Icon\ 01.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    width: 25px; 
+    padding: 0;
+    margin-right: 70px;
+}
+
+.hidden-input {
+    width: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: width 0.3s ease, opacity 0.3s ease;
+}
+
+.navbar-logo {
+    margin-right: 20px; 
+    margin-left: 70px; 
+}
+
+.navbar-nav {
+    margin-left: auto; 
+}
+
+.nav-link {
+    margin-right: 20px; 
+}
+
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 40px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+}
+.carousel-control-prev{
+    left: 90vw;
+    /* margin-left: 558px; */
+}
+.carousel-control-next{
+    right: 0;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: white;
+    background-size: cover;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+   
+}
+
+/* .buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center
+  }
+  
+  .carousel-control-next {
+    width: 50px;
+    top: 75vh; 
+    right: 0%; 
+    border-radius: 0 50px 50px 0;
+  }
+  .carousel-control {
+    display: none;
+  }
+  
+  .carousel-control-prev {
+    width: 50px;
+    top: 75vh; 
+    left: 89%; 
+    border-radius: 0 50px 50px 0;
+  } */
+#h3-services{
+    font-size: 48px;
+    font-weight: normal; /* Regularny */
+    font-family: 'Inter', sans-serif;
+    margin: 30px 0px;
+}
+#p-services {
+    font-size: 16px;
+    font-weight: normal; /* Regularny */
+    font-family: 'Inter', sans-serif;
+    margin: 30px 0px;
+}
+
+.justify-content-center {
+    background-color: #DCC1AB !important;
+    color: black;
+}
+#services-content{
+    margin-top: 70px;
+}
+.navbar-brand {
+    margin: 10px 0px;
+}
+/* .bi-search {
+    width: 5px;
+    height: 5px;
+} */
+/* Styl przycisku Przycisk 1 */
+.btn-primary {
+    background-color: #1B5B31;
+    border-color: #1B5B31;
+    color: white;
+
+    text-align: center; /* Tekst w przycisku jest wycentrowany */
+    margin-right: 40px !important;
+}
+
+/* Styl przycisku Przycisk 2 */
+.btn-light.text-success {
+    background-color: #DCC1AB;
+    color: #1B5B31;
+    border: 1px solid #1B5B31;
+
+    text-align: center; /* Tekst w przycisku jest wycentrowany */
+}
+
+#btn-intro-row {
+    text-align: center;
+ }
+ h2 {
+    font-size: 60px;
+    font-weight: medium; /* Pogrubiony */
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 40px;
+}
+#carousel-text {
+    margin: 70px;
+}
+
+.col-lg-6{
+    padding: 0px;
+}
+
+/* Styl tekstu w paragrafie p */
+p {
+    font-size: 16px;
+    font-weight: normal; /* Regularny */
+    font-family: 'Inter', sans-serif;
+    margin-right: 70px;
+    margin-bottom: 60px;
+}
+.btn-control {
+    margin-top: auto;
+    background-color: #F5F0EC;
+    color: black;
+    opacity: 1;
+    border-radius: 0px;
+    width: 90px;
+    height: 90px;
+}
+
+.container {
+    max-width: 100vw;
+    padding: 0;
+}
+
+#services {
+    background-color: #F5F0EC;
+}
+#services .col-lg-6 {
+    width: 100vw;
+}
+#text-services{
+    text-align: left;
+    margin-left: 5vw !important;
+}
+#services-content {
+    margin-left: 70px;
+}
+.card {
+    margin: 70px;
+    border-radius: 25px;
+    min-height: 45vh;
+    max-width: 25vw;
+}
+.card-contact {
+    border-radius: 0px;
+    min-height: 45vh;
+    max-width: 80vw;
+    background-color: #1B5B31;
+    color: white;
+    margin: 10vh 15vw;
+}
+body {
+    background-color: #F5F0EC;
+  }
+
+.about-col-2 {
+    background-color: #1B5B31;
+}
+#about .row > * {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: 0px;
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-top: var(--bs-gutter-y);
+  }
+
+  #btn-about {
+    border-radius: 20px;
+  }
+  #about-text {
+    color: white;
+  }
+
+  * { box-sizing: border-box; }
+
+
+
+  
+  /* ---- grid ---- */
+  
+  .grid {
+    background-color: #DCC1AB;
+    
+  }
+  
+  /* clear fix */
+  .grid:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+  
+  /* ---- .grid-item ---- */
+  
+  .grid-sizer,
+  .grid-item {
+    width: 33.333%;
+  }
+  
+  .grid-item {
+    float: left;
+
+  }
+  
+  .grid-item img {
+    display: block;
+    max-width: 100%;
+  }
+
+
+.grid::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(220, 193, 171, 0), rgba(220, 193, 171, 1));
+    z-index: 1;
+}
+
+
+/* Responsywność dla mobilnych urządzeń */
+@media (max-width: 767px) {
+    #intro .col-lg-6.d-flex.flex-column.justify-content-center.bg-light {
+        text-align: left; /* Tekst na mobilnych urządzeniach zaczyna się od lewej strony */
+    }
+    
+    .btn-primary,
+    .btn-light.text-success {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 0px;
+    }
+    #carousel-text {
+        margin: 20px;
+    }
+}
