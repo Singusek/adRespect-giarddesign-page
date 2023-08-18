@@ -211,6 +211,9 @@ p {
     color: white;
     margin: 10vh 15vw;
 }
+.contact-container {
+    margin-bottom: 100px;
+}
 body {
     background-color: #F5F0EC;
   }
@@ -304,7 +307,35 @@ body {
 .card-body a svg {
     margin: 0px;
 }
+.center-btn{
+    color: #1B5B31;
+    width: 140px;
+    height: 50px;
+    font-size: 20px;
+}
+.text-center {
+    font-size: 16px;
+    font-weight: normal; /* Regularny */
+    font-family: 'Inter', sans-serif;
+}
+#next-p {
+    font-weight: bold; /* Pogrubiony */  
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+}
 
+#first-p {
+    font-weight: bold; /* Pogrubiony */
+    font-size: 40px;
+    font-family: 'Inter', sans-serif;
+}
+
+.row-contact {
+    margin: 70px 70px;
+}
+/* .row-contact {
+    margin: 90px 70px;
+} */
 
 /* Responsywność dla mobilnych urządzeń */
 @media (max-width: 1000px) {
