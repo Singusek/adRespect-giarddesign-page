@@ -4,8 +4,10 @@
   "description": "",
   "main": "main.js",
   "dependencies": {
+    "bigger-picture": "^1.1.11",
     "bootstrap": "^5.3.1",
     "bootstrap-icons": "^1.10.5",
+    "macy": "^2.5.1",
     "masonry-layout": "^4.2.2"
   },
   "scripts": {

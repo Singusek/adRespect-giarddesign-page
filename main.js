@@ -1,4 +1,4 @@
-//import bootstrap from 'bootstrap';
+
 
 document.addEventListener('DOMContentLoaded', function() {
     const searchButton = document.querySelector('.search-button');
@@ -20,15 +20,36 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-const grid = document.querySelector('.grid');
+document.addEventListener('DOMContentLoaded', function() {
+  const macyInstance = Macy.init({
+    container: '.macy-container',
+    trueOrder: true,
+    waitForImages: true,
+    margin: 4,
+    columns: 3,
+    breakAt: {
+      1000: {
+        columns: 2
+      }
+    }
+  });
 
-let msnry = new Masonry( grid, {
-  itemSelector: '.grid-item',
-  columnWidth: '.grid-sizer',
-  percentPosition: true
+  BiggerPictures({
+    selector: '.macy-item a',
+  });
 });
 
-imagesLoaded( grid ).on( 'progress', function() {
-  // layout Masonry after each image loads
-  msnry.layout();
-});
+// const grid = document.querySelector('.grid');
+
+// let msnry = new Masonry( grid, {
+//   itemSelector: '.grid-item',
+//   columnWidth: '.grid-sizer',
+//   percentPosition: true
+// });
+
+// imagesLoaded( grid ).on( 'progress', function() {
+//   // layout Masonry after each image loads
+//   msnry.layout();
+// });
+
+

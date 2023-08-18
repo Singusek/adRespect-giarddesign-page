@@ -200,46 +200,59 @@
     </section>
 
     <section id="portfolio">
-      <div class="portfolio-contener">
-      <div id="text-portfolio">
-        <h2>Nasze projekty</h2>
-        </div>
-        <div id="portfolio-content">
-        <div class="grid">
-            <div class="grid-sizer"></div>
-            <div class="grid-item">
-              <img src="/assets/images/Photo(2).png" />
-            </div>
-            <div class="grid-item">
-              <img src="/assets/images/Photo(3).png" />
-            </div>
-            <div class="grid-item">
-              <img src="/assets/images/Photo(4).png" />
-            </div>
-            <div class="grid-item">
-              <img src="/assets/images/Photo(5).png" />
-            </div>
-            <div class="grid-item">
-              <img src="/assets/images/Photo(6).png" />
-            </div>
-            <div class="grid-item">
-              <img src="/assets/images/Photo(7).png" />
-            </div>
-            <div class="grid-item">
-              <img src="/assets/images/Photo(8).webp" width="452"/>
-            </div>
-            <div class="grid-item">
-              <img src="/assets/images/Photo(9).png" />
-            </div>
-            <div class="grid-item">
-              <img src="/assets/images/Photo(10).png" />
-            </div>
+      <div class="portfolio-container">
+        <div id="portfolio-content" class="macy-container">
+          <!-- Repeat the following macy-item elements for each image -->
+          <div class="macy-item">
+            <a href="/assets/images/Photo(2).png" data-bp-caption="Image 1">
+              <img src="/assets/images/Photo(2).png" alt="Image 1">
+            </a>
           </div>
-          <div id="button-portoflio">
-            <button type="button" class="btn btn-outline-dark rounded-pill">Rozwin</button>
-        </div>
+          <div class="macy-item">
+            <a href="/assets/images/Photo(3).png" data-bp-caption="Image 2">
+              <img src="/assets/images/Photo(3).png" alt="Image 2">
+            </a>
+          </div>
+          <div class="macy-item">
+            <a href="/assets/images/Photo(7).png" data-bp-caption="Image 6">
+              <img src="/assets/images/Photo(7).png" alt="Image 6">
+            </a>
+          </div>
+          <div class="macy-item">
+            <a href="/assets/images/Photo(4).png" data-bp-caption="Image 3">
+              <img src="/assets/images/Photo(4).png" alt="Image 3">
+            </a>
+          </div>
+          <div class="macy-item">
+            <a href="/assets/images/Photo(5).png" data-bp-caption="Image 4">
+              <img src="/assets/images/Photo(5).png" alt="Image 4">
+            </a>
+          </div>
+          <div class="macy-item">
+            <a href="/assets/images/Photo(6).png" data-bp-caption="Image 5">
+              <img src="/assets/images/Photo(6).png" alt="Image 5">
+            </a>
+          </div>
+          <div class="macy-item">
+            <a href="/assets/images/Photo(8).webp" data-bp-caption="Image 7">
+              <img src="/assets/images/Photo(8).webp" alt="Image 7" width="452">
+            </a>
+          </div>
+          <div class="macy-item">
+            <a href="/assets/images/Photo(9).png" data-bp-caption="Image 8">
+              <img src="/assets/images/Photo(9).png" alt="Image 8">
+            </a>
+          </div>
+          <div class="macy-item">
+            <a href="/assets/images/Zdjecia-opis-podstrona-505x708-3.png" data-bp-caption="Image 8">
+              <img src="/assets/images/Zdjecia-opis-podstrona-505x708-3.png" alt="Image 8">
+            </a>
+          </div>
         </div>
       </div>
+      <div id="button-portoflio">
+        <button type="button" class="btn btn-outline-dark rounded-pill">Rozwin</button>
+    </div>
     </section>
 
     <section id="contact">
@@ -305,6 +318,8 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/macy@2.1.1/dist/macy.min.js"></script>
+    <script src="path/to/bigger-pictures.min.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
