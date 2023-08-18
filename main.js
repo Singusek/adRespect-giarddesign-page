@@ -33,23 +33,34 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     }
   });
-
+  // todo
   BiggerPictures({
     selector: '.macy-item a',
   });
 });
 
-// const grid = document.querySelector('.grid');
+document.addEventListener("DOMContentLoaded", function() {
+  const macyContainer = document.querySelector(".macy-container");
+  const macyItems = macyContainer.querySelectorAll(".macy-item");
+  const buttonPortfolio = document.querySelector("#button-portoflio");
+  const initialItemsToShow = 9; 
+  let currentItemsToShow = initialItemsToShow;
 
-// let msnry = new Masonry( grid, {
-//   itemSelector: '.grid-item',
-//   columnWidth: '.grid-sizer',
-//   percentPosition: true
-// });
+  for (let i = initialItemsToShow; i < macyItems.length; i++) {
+    macyItems[i].style.display = "none";
+  }
 
-// imagesLoaded( grid ).on( 'progress', function() {
-//   // layout Masonry after each image loads
-//   msnry.layout();
-// });
+  buttonPortfolio.addEventListener("click", function() {
+    for (let i = currentItemsToShow; i < currentItemsToShow + initialItemsToShow; i++) {
+      if (macyItems[i]) {
+        macyItems[i].style.display = "block";
+      }
+    }
+    currentItemsToShow += initialItemsToShow;
 
-
+    if (currentItemsToShow >= macyItems.length) {
+      buttonPortfolio.style.display = "none";
+      portfolioContainer.style.height = "auto";
+    }
+  });
+});
