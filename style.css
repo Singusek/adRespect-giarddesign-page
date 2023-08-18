@@ -175,6 +175,7 @@ p {
 }
 #services-content {
     margin-left: 70px;
+    margin-right: 70px;
 }
 .card {
     margin: 70px;
@@ -260,10 +261,26 @@ body {
     background: linear-gradient(to bottom, rgba(220, 193, 171, 0), rgba(220, 193, 171, 1));
     z-index: 1;
 }
+.card-body svg{
+    margin: 40px 0px 20px 20px;
+    
+}
+.card-body p {
+    margin: 10px 20px 50px 20px;
+}
+
+.card-body h5 {
+    margin: 10px 20px 20px 20px;
+    font-weight: bold;
+}
+
+.card-body a {
+    margin: 10px 20px 50px 20px;
+}
 
 
 /* Responsywność dla mobilnych urządzeń */
-@media (max-width: 767px) {
+@media (max-width: 1000px) {
     #intro .col-lg-6.d-flex.flex-column.justify-content-center.bg-light {
         text-align: left; /* Tekst na mobilnych urządzeniach zaczyna się od lewej strony */
     }
@@ -276,5 +293,21 @@ body {
     }
     #carousel-text {
         margin: 20px;
+    }
+    .card-services {
+        min-width: 350px; /* Ustal szerokość karty */
+        margin: auto; /* Dodaj odstęp pomiędzy kartami */
+
+    }
+    .card {
+        min-width: fit-content;
+        margin: 20px 0px;
+    }
+
+    .row-cols-md-3 {
+        min-width: 350px;
+    }
+    #p-services {
+        margin-top: 20px;
     }
 }
