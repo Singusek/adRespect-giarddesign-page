@@ -79,15 +79,17 @@
   } */
 #h3-services{
     font-size: 48px;
-    font-weight: normal; /* Regularny */
-    font-family: 'Inter', sans-serif;
+    font-weight: bold; /* Regularny */
+    font-family: 'Montserrat', sans-serif;
     margin: 30px 0px;
+    margin: 0px 100px;
 }
 #p-services {
     font-size: 16px;
     font-weight: normal; /* Regularny */
     font-family: 'Inter', sans-serif;
     margin: 30px 0px;
+    margin: 30px 100px;
 }
 
 .justify-content-center {
@@ -138,6 +140,24 @@
 
 .col-lg-6{
     padding: 0px;
+}
+
+.text-about {
+    margin: 25vh 10vw 20vh 10vw; 
+}
+
+/* top right bottom left */
+
+.text-about h2{
+    font-size: 48px;
+    font-weight: medium; /* Pogrubiony */
+    font-family: 'Montserrat', sans-serif;
+}
+
+.text-about p{
+    font-size: 16px;
+    font-weight: normal; /* Regularny */
+    font-family: 'Inter', sans-serif;
 }
 
 /* Styl tekstu w paragrafie p */
@@ -214,9 +234,19 @@ body {
     color: white;
   }
 
+#portfolio  {
+    background-color: #DCC1AB;
+}
+#text-portfolio h2 {
+   margin: 20px 70px 40px 70px;
+
+}
+
   * { box-sizing: border-box; }
 
-
+#button-portoflio button{
+   margin: 20px;
+}
 
   
   /* ---- grid ---- */
@@ -267,15 +297,25 @@ body {
 }
 .card-body p {
     margin: 10px 20px 50px 20px;
+    font-size: 16px;
+    font-weight: normal; /* Regularny */
+    font-family: 'Inter', sans-serif;
 }
 
 .card-body h5 {
     margin: 10px 20px 20px 20px;
-    font-weight: bold;
+    font-weight: bold; /* Pogrubiony */
+    font-size: 28px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .card-body a {
     margin: 10px 20px 50px 20px;
+    color: #1B5B31;
+    font-size: 16px;
+}
+.card-body a svg {
+    margin: 0px;
 }
 
 
@@ -307,7 +347,43 @@ body {
     .row-cols-md-3 {
         min-width: 350px;
     }
+
+    .text-about {
+        margin: 22vh 10vw 20vh 10vw; 
+    }
+    
+    /* top right bottom left */
+    
+    .text-about h2{
+        font-size: 36px;
+        font-weight: medium; /* Pogrubiony */
+        font-family: 'Montserrat', sans-serif;
+        margin: 30px 0px;
+    }
+    
+    .text-about p{
+        font-size: 16px;
+        font-weight: normal; /* Regularny */
+        font-family: 'Inter', sans-serif;
+        margin: 30px 0px;
+    }
+    #about .col-photo-about {
+        min-width: 100vw;
+    }
+
+    #h3-services{
+        font-size: 36px;
+        font-weight: bold; /* Regularny */
+        font-family: 'Montserrat', sans-serif;
+        margin: 30px 0px;
+
+    }
     #p-services {
-        margin-top: 20px;
+
+        font-size: 16px;
+        font-weight: normal; /* Regularny */
+        font-family: 'Inter', sans-serif;
+        margin: 30px 0px;
+
     }
 }
