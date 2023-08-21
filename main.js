@@ -64,3 +64,9 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   });
 });
+
+
+function scrollToPortfolio() {
+  const portfolioSection = document.getElementById('portfolio');
+  portfolioSection.scrollIntoView({ behavior: 'smooth' });
+}
