@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 document.addEventListener('DOMContentLoaded', function() {
-  const macyInstance = Macy.init({
+  const macyInstance = Macy({
     container: '.macy-container',
     trueOrder: true,
     waitForImages: true,
@@ -33,10 +33,8 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     }
   });
-  // todo
-  BiggerPictures({
-    selector: '.macy-item a',
-  });
+  
+
 });
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -60,10 +58,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
     if (currentItemsToShow >= macyItems.length) {
       buttonPortfolio.style.display = "none";
-      portfolioContainer.style.height = "auto";
     }
   });
-});
+})
 
 
 function scrollToPortfolio() {
