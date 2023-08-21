@@ -218,7 +218,7 @@ p {
 #footer .py-4,
 #footer .mb-0 {
   margin-right: 100px;
-  margin-left: 100px;
+  margin-left: 200px;
   margin-top: 40px;
   margin-bottom: 40px;
 }
@@ -226,17 +226,21 @@ p {
 #footer .mb-0 {
   margin-top: 20px;
   margin-bottom: 20px;
-  margin-left: 100px;
+  margin-left: 200px;
 }
 #footer ul {
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 200px;
+    margin-right: 0px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 #footer .col-md-6 {
     margin-top: 20px;
     margin-bottom: 40px;
+
+}
+.logo-footer-2 {
+    margin-right: 400px;
 }
 
 .white-line {
