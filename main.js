@@ -1,25 +1,4 @@
-
-
-document.addEventListener('DOMContentLoaded', function() {
-    const searchButton = document.querySelector('.search-button');
-    const hiddenInput = document.querySelector('.hidden-input');
-
-    let isInputVisible = false;
-
-    searchButton.addEventListener('click', () => {
-        if (isInputVisible) {
-            hiddenInput.style.width = '0';
-            hiddenInput.style.opacity = '0';
-        } else {
-            hiddenInput.style.width = '200px'; 
-            hiddenInput.style.opacity = '1';
-            hiddenInput.focus();
-        }
-
-        isInputVisible = !isInputVisible;
-    });
-});
-
+/* Macy */
 document.addEventListener('DOMContentLoaded', function() {
   const macyInstance = Macy({
     container: '.macy-container',
@@ -33,8 +12,6 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     }
   });
-  
-
 });
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -69,15 +46,36 @@ document.addEventListener("DOMContentLoaded", function() {
     
     }
   });
-})
-
+});
 
 function scrollToPortfolio() {
   const portfolioSection = document.getElementById('portfolio');
   portfolioSection.scrollIntoView({ behavior: 'smooth' });
 }
 
+/* Search input in Navbar */
+document.addEventListener('DOMContentLoaded', function() {
+    const searchButton = document.querySelector('.search-button');
+    const hiddenInput = document.querySelector('.hidden-input');
 
+    let isInputVisible = false;
+
+    searchButton.addEventListener('click', () => {
+        if (isInputVisible) {
+            hiddenInput.style.width = '0';
+            hiddenInput.style.opacity = '0';
+        } else {
+            hiddenInput.style.width = '200px'; 
+            hiddenInput.style.opacity = '1';
+            hiddenInput.focus();
+        }
+
+        isInputVisible = !isInputVisible;
+    });
+});
+
+
+/* Lightbox gallery */
 document.addEventListener("DOMContentLoaded", function () {
   const lightboxItems = document.querySelectorAll(".lightbox-item");
   const lightboxOverlay = document.getElementById("lightbox-overlay");
@@ -94,11 +92,9 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
   
-
   lightboxClose.addEventListener("click", function () {
     lightboxOverlay.style.display = "none";
   });
-
 
   lightboxImage.addEventListener("click", function (e) {
     const x = e.clientX;
@@ -138,6 +134,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+/* Animations */
 document.addEventListener("DOMContentLoaded", function() {
   const cards = document.querySelectorAll(".card-services");
 
