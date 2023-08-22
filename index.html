@@ -9,10 +9,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@400;500&display=swap" rel="stylesheet"> 
+    <link
+    rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>giarddesign</title>
 </head>
 <body>
-    <section id="navbar">
+    <section id="navbar" class="sticky-top">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
@@ -61,48 +63,71 @@
         </nav>
     </section>
     <section id="intro">
-        <div class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="row">
-                        <div class="col-lg-6 d-flex flex-column justify-content-center bg-light">
-                            <div id="carousel-text">
-                                <h2>Nowoczesna <br> aranżacja <br> Twojego ogrodu</h2>
-                                <p>Marka GiardDesign to wieloletnie doświadczenie i wysoka <br> estetyka realizacji. Oferujemy kompleksowy zakres usług <br> z indywidualnym podejściem do każdego projektu.</p>
-                                <div class="d-flex" id="btn-intro-row">
-                                    <button class="btn btn-primary me-2 rounded-pill btn-intro">Skontaktuj się z nami</button>
-                                    <button class="btn btn-light rounded-pill text-success btn-intro" onclick="scrollToPortfolio()">
-                                        Zobacz nasze realizacje
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
-                                            <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"/>
-                                        </svg>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 d-grid">
-                            <img src="assets/images/photo-1514621166532-aa7eb1a3a2f4-683x1024 1.png" class="d-block w-100" alt="Slide 1">
-                            <div class="carousel-navigation d-flex">
-                                <button class="carousel-control-prev btn-control" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
-                                        <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
-                                    </svg>
-                                    <span class="visually-hidden">Previous</span>
-                                </button>
-                                <button class="carousel-control-next btn-control" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
-                                    </svg>
-                                    <span class="visually-hidden">next</span>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Dodaj więcej slajdów w podobnym formacie -->
-            </div>
-        </div>
-    </section>
+      <div class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <div class="row">
+                      <div class="col-lg-6 d-flex flex-column justify-content-center bg-light">
+                          <div id="carousel-text">
+                              <h2>Nowoczesna aranżacja Twojego ogrodu</h2>
+                              <p>Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy zakres usług z indywidualnym podejściem do każdego projektu.</p>
+                              <div class="d-flex text-md-start" id="btn-intro-row">
+                                  <button class="btn btn-primary rounded-pill btn-intro">Skontaktuj się z nami</button>
+                                  <button class="btn btn-light rounded-pill text-success btn-intro" onclick="scrollToPortfolio()">
+                                      Zobacz nasze realizacje
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
+                                          <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"/>
+                                      </svg>
+                                  </button>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-6">
+                          <img src="assets/images/intro-1.png" class="d-block w-100" alt="Slide 1">
+                      </div>
+                  </div>
+              </div>
+              
+              <div class="carousel-item">
+                  <div class="row">
+                      <div class="col-lg-6 d-flex flex-column justify-content-center bg-light">
+                          <div id="carousel-text">
+                            <h2>Nowoczesna aranżacja Twojego ogrodu</h2>
+                            <p>Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy zakres usług z indywidualnym podejściem do każdego projektu.</p>
+                              <div class="d-flex text-md-start" id="btn-intro-row">
+                                  <button class="btn btn-primary rounded-pill btn-intro">Skontaktuj się z nami</button>
+                                  <button class="btn btn-light rounded-pill text-success btn-intro" onclick="scrollToSomeSection()">
+                                    Zobacz nasze realizacje
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
+                                      <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"/>
+                                  </svg>
+                                  </button>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-6">
+                          <img src="assets/images/intro-2.png" class="d-block w-100" alt="Slide 2">
+                      </div>
+                  </div>
+              </div>
+          </div>
+  
+          <button class="carousel-control-prev btn-control" type="button" data-bs-target="#intro .carousel" data-bs-slide="prev">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+            </svg>
+              <span class="visually-hidden">Previous</span>
+          </button>
+          
+          <button class="carousel-control-next btn-control" type="button" data-bs-target="#intro .carousel" data-bs-slide="next">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+            </svg>
+              <span class="visually-hidden">Next</span>
+          </button>
+      </div>
+  </section>
+  
     
     
     <section id="services" class="container">
@@ -118,7 +143,7 @@
         </div>
         <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col card-services">
-              <div class="card" id="card-services">
+              <div class="card animate__animated" id="card-services">
                 <div class="card-body">
                   <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
                     <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
@@ -134,7 +159,7 @@
               </div>
             </div>
             <div class="col card-services">
-              <div class="card">
+              <div class="card animate__animated">
                 <div class="card-body">
                   <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
                     <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
@@ -151,7 +176,7 @@
               </div>
             </div>
             <div class="col card-services">
-              <div class="card">
+              <div class="card animate__animated">
                 <div class="card-body">
                   <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-stars" viewBox="0 0 16 16">
                     <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828l.645-1.937zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.734 1.734 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.734 1.734 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.734 1.734 0 0 0 3.407 2.31l.387-1.162zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L10.863.1z"/>
@@ -196,8 +221,7 @@
                 </button>
               </div>
               </div>
-            </div>
-          
+            </div>      
     </section>
 
     <section id="portfolio">
@@ -206,59 +230,74 @@
           <p id="portfolio-text">Nasze <i>projekty</i></p>
         </div>
         <div id="portfolio-content" class="macy-container portfolio-content">
-          <div class="macy-item">
+          <div class="macy-item lightbox-item">
             <a href="/assets/images/Photo(2).png" data-bp-caption="Image 1">
               <img src="/assets/images/Photo(2).png" alt="Image 1">
             </a>
           </div>
-          <div class="macy-item">
+          <div class="macy-item lightbox-item">
             <a href="/assets/images/Photo(3).png" data-bp-caption="Image 2">
               <img src="/assets/images/Photo(3).png" alt="Image 2">
             </a>
           </div>
-          <div class="macy-item">
+          <div class="macy-item lightbox-item">
             <a href="/assets/images/Photo(7).png" data-bp-caption="Image 6">
               <img src="/assets/images/Photo(7).png" alt="Image 6">
             </a>
           </div>
-          <div class="macy-item">
+          <div class="macy-item lightbox-item">
             <a href="/assets/images/Photo(4).png" data-bp-caption="Image 3">
               <img src="/assets/images/Photo(4).png" alt="Image 3">
             </a>
           </div>
-          <div class="macy-item">
+          <div class="macy-item lightbox-item">
             <a href="/assets/images/Photo(5).png" data-bp-caption="Image 4">
               <img src="/assets/images/Photo(5).png" alt="Image 4">
             </a>
           </div>
-          <div class="macy-item">
+          <div class="macy-item lightbox-item">
             <a href="/assets/images/Photo(6).png" data-bp-caption="Image 5">
               <img src="/assets/images/Photo(6).png" alt="Image 5">
             </a>
           </div>
-          <div class="macy-item">
+          <div class="macy-item lightbox-item">
             <a href="/assets/images/Photo(8).webp" data-bp-caption="Image 7">
               <img src="/assets/images/Photo(8).webp" alt="Image 7" width="452">
             </a>
           </div>
-          <div class="macy-item">
+          <div class="macy-item lightbox-item">
             <a href="/assets/images/Photo(9).png" data-bp-caption="Image 8">
               <img src="/assets/images/Photo(9).png" alt="Image 8">
             </a>
           </div>
-          <div class="macy-item">
-            <a href="/assets/images/Zdjecia-opis-podstrona-505x708-3.png" data-bp-caption="Image 8">
-              <img src="/assets/images/Zdjecia-opis-podstrona-505x708-3.png" alt="Image 8">
+          <div class="macy-item lightbox-item">
+            <a href="/assets/images/Zdjecia-opis-podstrona-505x708-3.png" data-bp-caption="Image 9">
+              <img src="/assets/images/Zdjecia-opis-podstrona-505x708-3.png" alt="Image 9">
             </a>
           </div>
-          <div class="macy-item">
-            <a href="/assets/images/unnamed.jpg" data-bp-caption="Image 8">
-              <img src="/assets/images/unnamed.jpg" alt="Image 8">
+          <div class="macy-item lightbox-item">
+            <a href="/assets/images/unnamed.jpg" data-bp-caption="Image 10">
+              <img src="/assets/images/unnamed.jpg" alt="Image 10">
             </a>
           </div>
-          <div class="macy-item">
-            <a href="/assets/images/photo(11).jpeg" data-bp-caption="Image 8">
-              <img src="/assets/images/photo(11).jpeg" alt="Image 8">
+          <div class="macy-item lightbox-item">
+            <a href="/assets/images/photo(11).jpeg" data-bp-caption="Image 11">
+              <img src="/assets/images/photo(11).jpeg" alt="Image 11">
+            </a>
+          </div>
+          <div class="macy-item lightbox-item">
+            <a href="/assets/images/photo12.jpg" data-bp-caption="Image 12">
+              <img src="/assets/images/photo12.jpg" alt="Image 12">
+            </a>
+          </div>
+          <div class="macy-item lightbox-item">
+            <a href="/assets/images/photo13.jpg" data-bp-caption="Image 13">
+              <img src="/assets/images/photo13.jpg" alt="Image 13">
+            </a>
+          </div>
+          <div class="macy-item lightbox-item">
+            <a href="/assets/images/photo14.jpg" data-bp-caption="Image 14">
+              <img src="/assets/images/photo14.jpg" alt="Image 14">
             </a>
           </div>
         </div>
@@ -271,6 +310,14 @@
     </div>
     </section>
 
+    <div class="lightbox-overlay" id="lightbox-overlay">
+      <div class="lightbox-content">
+        <img src="" alt="" class="lightbox-image" id="lightbox-image">
+        <button class="lightbox-close" id="lightbox-close">&times;</button>
+      </div>
+    </div>
+    
+   
     <section id="contact">
       <div class="contact-container">
         <div class="card mb-3 card-contact">
@@ -281,7 +328,7 @@
               </div>
               <div class="col-md-3 col-lg-3 col-xl-3 text-center">
                 <p class="card-text">Śledź nasze najnowsze realizacje!</p>
-                <button type="button" class="btn btn-light rounded-pill center-btn text-center">Instagram</button>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="btn btn-light rounded-pill center-btn">Instagram</a>
               </div>
             </div>
           </div>
@@ -301,7 +348,7 @@
             </div>
             <div class="col-md-6 d-flex btn-footer">
               <p class="mb-0">Daj znać, co możemy dla Ciebie zrobić!
-                <button class="btn btn-primary rounded-pill">Skontaktuj się z nami</button></p>
+                <button class="btn btn-primary rounded-pill button-footer">Skontaktuj się z nami</button></p>
             </div>
             <div class="col-md-8">
               <hr class="text-white white-line">

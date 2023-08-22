@@ -45,6 +45,51 @@ body {
 }
 
 /* intro */
+#intro .carousel-inner {
+    position: relative;
+}
+
+#intro .carousel-inner .carousel-item .col-lg-6 {
+    padding: 0;
+}
+
+#intro #carousel-text {
+    padding: 70px;
+}
+
+#intro h2 {
+    font-size: 60px;
+    font-weight: medium;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 40px;
+}
+
+#intro p {
+    font-size: 16px;
+    font-weight: normal;
+    font-family: 'Inter', sans-serif;
+    margin-right: 70px;
+    margin-bottom: 60px;
+}
+
+#intro #btn-intro-row {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+#intro .btn-primary {
+    background-color: #1B5B31;
+    border-color: #1B5B31;
+    color: white;
+}
+
+#intro .btn-light.text-success {
+    background-color: #DCC1AB;
+    color: #1B5B31;
+    border: 1px solid #1B5B31;
+}
+
 .carousel-control-prev,
 .carousel-control-next {
     width: 40px;
@@ -54,14 +99,6 @@ body {
     justify-content: center;
 }
 
-.carousel-control-prev{
-    left: 90vw;
-}
-
-.carousel-control-next{
-    right: 0;
-}
-
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
     background-color: white;
@@ -69,7 +106,14 @@ body {
     border-radius: 50%;
     width: 20px;
     height: 20px;
-   
+}
+
+.carousel-control-prev{
+    left: 90vw;
+}
+
+.carousel-control-next{
+    right: 0;
 }
 
 .btn-primary {
@@ -224,6 +268,8 @@ h2 {
 #portfolio  {
     background-color: #DCC1AB;
 }
+
+
 #text-portfolio h2 {
    margin: 20px 70px 40px 70px;
 
@@ -250,7 +296,7 @@ h2 {
     cursor: pointer;
   } 
 
-  .macy-container::before {
+ .macy-container::before {
     content: "";
     position: absolute;
     top: 0;
@@ -259,6 +305,9 @@ h2 {
     height: 100%;
     background: linear-gradient(to bottom, rgba(220, 193, 171, 0), rgba(220, 193, 171, 1));
     z-index: 1;
+}
+.remove-before-pseudo::before {
+    content: none;
 }
 #portfolio-text {
     margin-left: 120px;
@@ -337,6 +386,10 @@ h2 {
 .row-contact {
     margin: 70px 70px;
 }
+#contact .center-btn {
+    text-align: center;
+    padding-top: 10px;
+}
 
 /* footer */
 #footer {
@@ -348,14 +401,88 @@ h2 {
 #footer .container {
     margin-left: 200px;
 }
+hr {
+    opacity: 1;
+  }
 
 
+/* Lightbox*/
+.lightbox-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+  }
+  
+  .lightbox-content {
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .lightbox-image {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  .lightbox-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: #fff;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+  }
 
 
-
-@media (max-width: 1000px) {
+  @media (max-width: 1620px) {
     #intro .col-lg-6.d-flex.flex-column.justify-content-center.bg-light {
         text-align: left; 
+    }
+    #intro p {
+        font-size: 16px;
+        font-weight: normal; 
+        font-family: 'Inter', sans-serif;
+        margin: 10px;
+       
+    }
+    #intro h2 {
+        font-size: 36px;
+        font-weight: medium; 
+        font-family: 'Montserrat', sans-serif;
+        margin: 10px;
+    }
+    #intro #carousel-text {
+        padding: 20px;
+      }
+
+     #btn-intro-row {
+        display: flex !important;
+        padding-top: 10px;
+      }
+      .btn-intro {
+        max-width: auto;
+        min-height: 40px;
+      }
+
+    .carousel-control-prev{
+        left: 0;
+    }
+    
+    .carousel-control-next{
+        right: 0;
     }
     
     .btn-primary,
@@ -367,6 +494,8 @@ h2 {
     #carousel-text {
         margin: 20px;
     }
+    
+    
     .card-services {
         min-width: 350px; 
         margin: auto; 
@@ -377,14 +506,180 @@ h2 {
         margin: 20px 0px;
     }
 
+    #services-content {
+        margin-left: 40px;
+        margin-right: 40px;
+      }
     .row-cols-md-3 {
         min-width: 350px;
     }
 
     .text-about {
-        margin: 22vh 10vw 20vh 10vw; 
+        margin: 80px 80px; 
     }
     
+    #portfolio-text {
+        margin-left: 20px;
+        font-weight: bold;
+        font-size: 26px;
+        font-family: 'Montserrat', sans-serif;
+      }
+    
+    .text-about h2{
+        font-size: 36px;
+        font-weight: medium; 
+        font-family: 'Montserrat', sans-serif;
+        margin: 30px 0px;
+    }
+    
+    .text-about p{
+        font-size: 16px;
+        font-weight: normal; 
+        font-family: 'Inter', sans-serif;
+        margin: 20px 0px;
+    }
+    #about .col-photo-about {
+        min-width: 50%;
+        max-height: 50%;
+        display: flex !important;
+    }
+
+    #h3-services{
+        font-size: 36px;
+        font-weight: bold; 
+        font-family: 'Montserrat', sans-serif;
+        margin: 30px 0px;
+
+    }
+    #p-services {
+
+        font-size: 16px;
+        font-weight: normal; 
+        font-family: 'Inter', sans-serif;
+        margin: 30px 0px;
+
+    }
+
+    #footer .container {
+        margin-left: 100px;
+      }
+    .button-footer {
+        max-width: 250px;
+    }
+
+    .text-center {
+        font-size: 16px;
+        font-weight: normal; 
+        font-family: 'Inter', sans-serif;
+    }
+    #next-p {
+        font-weight: bold;   
+        font-size: 34px;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+    }
+    
+    #first-p {
+        font-weight: bold; 
+        font-size: 34px;
+        font-family: 'Inter', sans-serif;
+        text-align: center;
+    }
+    
+    #contact .center-btn {
+        text-align: center;
+        padding-top: 10px;
+    }
+    #contact .card-body, p{
+        margin: 10px auto;
+        font-size: 16px;
+        font-weight: normal;
+        font-family: 'Inter', sans-serif;
+      }
+
+      #contact .card {
+        min-width: fit-content;
+        margin: 70px 0px;
+      }
+}
+
+@media (max-width: 650px) {
+    #intro .col-lg-6.d-flex.flex-column.justify-content-center.bg-light {
+        text-align: left; 
+    }
+    #intro p {
+        font-size: 16px;
+        font-weight: normal; 
+        font-family: 'Inter', sans-serif;
+        margin: 10px;
+       
+    }
+    #intro h2 {
+        font-size: 36px;
+        font-weight: medium; 
+        font-family: 'Montserrat', sans-serif;
+        margin: 10px;
+    }
+    #intro #carousel-text {
+        padding: 20px;
+      }
+
+     #btn-intro-row {
+        display: block !important;
+        padding-top: 10px;
+      }
+      .btn-intro {
+        max-width: auto;
+        min-height: 40px;
+      }
+
+    .carousel-control-prev{
+        left: 0;
+    }
+    
+    .carousel-control-next{
+        right: 0;
+    }
+    
+    .btn-primary,
+    .btn-light.text-success {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 0px;
+    }
+    #carousel-text {
+        margin: 20px;
+    }
+    
+    
+    .card-services {
+        min-width: 350px; 
+        margin: auto; 
+
+    }
+    .card {
+        min-width: fit-content;
+        margin: 20px 0px;
+    }
+
+    #services-content {
+        margin-left: 40px;
+        margin-right: 40px;
+      }
+    .row-cols-md-3 {
+        min-width: 350px;
+    }
+
+    .text-about {
+        margin: 40px 20px; 
+    }
+    
+    #portfolio-text {
+        margin-left: 20px;
+        font-weight: bold;
+        font-size: 26px;
+        font-family: 'Montserrat', sans-serif;
+      }
     
     .text-about h2{
         font-size: 36px;
@@ -420,26 +715,71 @@ h2 {
     }
 
     #footer {
-        padding: 40px 0;
+        padding: 5px 0;
         background-color: #212529; 
         color: white; 
+        align-items: center;
     }
     
+    
     #footer .container {
-        margin: 40px 40px;
+        margin: auto;
+        text-align: center;
+    }
+    
+    hr {
+        opacity: 1;
     }
  
     #footer .logo,
     #footer .btn-footer,
     #footer .col-md-6 {
-        margin: 20px;
+        margin: 5px;
     }
 
     #footer .pb-4 {
-        margin-left: auto;
+        margin-left: 40px;   
     }
 
-    #footer .btn-footer {
-        max-width: 350px;
+    .button-footer {
+        max-width: 250px;
     }
+
+    .text-center {
+        font-size: 16px;
+        font-weight: normal; 
+        font-family: 'Inter', sans-serif;
+    }
+    #next-p {
+        font-weight: bold;   
+        font-size: 24px;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+    }
+    
+    #first-p {
+        font-weight: bold; 
+        font-size: 24px;
+        font-family: 'Inter', sans-serif;
+        text-align: center;
+    }
+    
+    .row-contact {
+        margin: auto;
+    }
+    #contact .center-btn {
+        text-align: center;
+        padding-top: 10px;
+    }
+    #contact .card-body, p{
+        margin: 10px auto;
+        font-size: 16px;
+        font-weight: normal;
+        font-family: 'Inter', sans-serif;
+      }
+
+      #contact .card {
+        min-width: fit-content;
+        margin: 70px 0px;
+      }
 }
