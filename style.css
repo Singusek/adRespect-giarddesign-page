@@ -19,6 +19,13 @@ body {
     padding: 0;
     margin-right: 70px;
 }
+.btn-outline-success.search-button:hover {
+    background-color: white;
+}
+
+.btn-outline-success.search-button:active {
+    background-color: white;
+}
 
 .hidden-input {
     width: 0;
