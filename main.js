@@ -28,6 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   buttonPortfolio.addEventListener("click", function() {
     const mediaQueryMobile = window.matchMedia("(max-width: 650px)");
+    const mediaQueryTab = window.matchMedia("(max-width: 1650px)");
     for (let i = currentItemsToShow; i < currentItemsToShow + initialItemsToShow; i++) {
       if (macyItems[i]) {
         macyItems[i].style.display = "block";
@@ -35,10 +36,13 @@ document.addEventListener("DOMContentLoaded", function() {
       }
         if (mediaQueryMobile.matches) {
         macyContainer.style.height = "1650px";
+      } else if (mediaQueryTab.matches) {
+        macyContainer.style.height = "2100px";
       } else {
         macyContainer.style.height = "3300px";
       }
     }
+    
     currentItemsToShow += initialItemsToShow;
 
     if (currentItemsToShow >= macyItems.length) {
